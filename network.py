@@ -94,7 +94,7 @@ def udp_ok_listener(ip, app):
 
 def udp_listener(ip, port, app):
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    csv_writer = CSVCsiWriter(max_records = 10000, output_dir="data/user1_pos5_fall")
+    csv_writer = CSVCsiWriter(max_records = 10000, output_dir="data/user0_pos5_standup")
     recv_cnt = 0
     report_cnt = 0
     last_time = time.time()
